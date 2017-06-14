@@ -10,7 +10,6 @@ function callApi(endpoint, params ) {
       }
       let message = "Server Error";
       try {
-        console.log('response=', response );
         message = response.statusText;
       } catch (e) {
         console.log(e);
