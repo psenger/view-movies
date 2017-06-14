@@ -29,7 +29,6 @@ export class Login extends Component {
 
   onClickSubmitHandler(e) {
     e.stopPropagation();
-    console.log('this.state.password', this.state.password);
     this.props.moviesActionDispatcher.initiateRequest(this.state.password);
     return false;
   }
