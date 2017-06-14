@@ -1,12 +1,12 @@
 # Movie Viewing Website - SPA with ReactJS
 
-This is the front end for a server that authenticates, prepares a list of unlisted youtube videos for viewing... and displays them.
+This is the front end code for a very simple Video viewing website. It is written in ReactJS and uses Redux and Sagas. The Server has authentication resources ( nothing special, clear text, no cookie or jwt... not even ssl), prepares a list of unlisted youtube videos for viewing, and then displays them. :boom:
 
 Written by Philip A Senger
 
 [philip.a.senger@cngrgroup.com](mailto:philip.a.senger@cngrgroup.com) | mobile: 0404466846 | [CV/Resume](http://www.visualcv.com/philipsenger) | [blog](http://www.apachecommonstipsandtricks.blogspot.com/) | [LinkedIn](http://au.linkedin.com/in/philipsenger) | [twitter](http://twitter.com/PSengerDownUndr) | [keybase](https://keybase.io/psenger)
 
-Website in action is located [here](http://simple-car-example.s3-website-ap-southeast-2.amazonaws.com/)
+Website in action is located [here](http://godslight.s3-website-ap-southeast-2.amazonaws.com/)
 
 ## TOC
 
