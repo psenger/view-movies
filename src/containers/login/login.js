@@ -71,11 +71,9 @@ export class Login extends Component {
             }
           }}>
           <div role="alert" aria-busy="true">
-            <form>
-              <label>Password: <input type="text" onChange={this.onChangePassword} required/></label>
-              <button type="button" onClick={this.onClickSubmitHandler}>submit</button>
-              {this.props.isError ? <div className="login-mask--error-message">{this.props.message}</div> : null}
-            </form>
+            <label>Password: <input type="text" onChange={this.onChangePassword} required/></label>
+            <button type="button" onClick={this.onClickSubmitHandler}>submit</button>
+            {this.props.isError ? <div className="login-mask--error-message">{this.props.message}</div> : null}
           </div>
         </div>
         {this.props.children}
