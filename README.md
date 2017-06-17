@@ -16,11 +16,11 @@ Website in action is located [here](http://godslight.s3-website-ap-southeast-2.a
 
 ## Environment Variables
 
-| Mandate  | Name      | Purpose                                                                                                           |
-|:---------|:----------|:------------------------------------------------------------------------------------------------------------------|
-| required | API_URL   | The base Url to the hosted api server. If not set, it assumes localhost.                                          |
-| required | PUBLIC_URL| The Url to the public html server. Values will be embedded into the processed HTML. defaults to local host.       |
-| required | NODE_ENV  | When you deploy, you should set this to 'production'. This will turn off the Redux Logger. default is development |
+| Mandate  | Name       | Purpose                                                                                                                                                      |
+|:---------|:-----------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| required | API_URL    | The base Url to the hosted api server. If not set, it assumes localhost. eg: ``export API_URL=https://aaaaaa.bbbb.com/``                                     |
+| required | PUBLIC_URL | The Url to the public html server. Values will be embedded into the processed HTML. defaults to local host. eg: ``export PUBLIC_URL=https://zzzz.dddd.com/`` |
+| required | NODE_ENV   | When you deploy, you should set this to 'production'. This will turn off the Redux Logger. default is development. eg: ``export NODE_ENV=production``        |
 
 
 ## Command Line
@@ -39,19 +39,30 @@ export API_URL=XXXX
 export PUBLIC_URL=XXXX
 export NODE_ENV=production
 ```
+
 *2.* Install all node modules.
 ```bash
 npm install
 ```
+
 *3.* clean the build
 ```bash
 npm run clean
 ```
+
 *4.* build the app
 ```bash
 npm run build
 ```
-*5.* sync with aws. And XXXX is the S3 Bucket
+
+*5.* check everything into git
+
+*6.* build the app
+```bash
+npm version patch
+```
+
+*7.* sync with aws. And XXXX is the S3 Bucket
 ```bash
 cd build
 aws s3 sync . s3://XXXX
