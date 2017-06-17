@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Login from './containers/login/login';
 import AvailableVideos from './containers/avaiableVideos/availableVideos';
 
-import "./App.scss";
+import "./App.css";
 
 class App extends Component {
 
