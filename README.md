@@ -6,13 +6,17 @@ Written by Philip A Senger
 
 [philip.a.senger@cngrgroup.com](mailto:philip.a.senger@cngrgroup.com) | mobile: 0404466846 | [CV/Resume](http://www.visualcv.com/philipsenger) | [blog](http://www.apachecommonstipsandtricks.blogspot.com/) | [LinkedIn](http://au.linkedin.com/in/philipsenger) | [twitter](http://twitter.com/PSengerDownUndr) | [keybase](https://keybase.io/psenger)
 
-Website in action is located [here](http://godslight.s3-website-ap-southeast-2.amazonaws.com/)
-
 ## TOC
 
+* [URLs and APIs](#urls-and-apis)
 * [Environment Variables](#environment-variables)
 * [Command Line](#command-line)
 * [Deploying](#deploying)
+
+## URLs and APIs
+
+* Website in action is located [here](http://godslight.s3-website-ap-southeast-2.amazonaws.com/)
+* The REST API URL for [GET](http://127.0.0.1:3000/movies) when you run it locally.
 
 ## Environment Variables
 
