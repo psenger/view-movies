@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPlayer from "react-player";
+import LazyLoad from 'react-lazy-load';
 
 export const VideoPlayer = (groupItem, i) => {
   return (<div>
@@ -8,7 +9,9 @@ export const VideoPlayer = (groupItem, i) => {
       {groupItem.videos.map((videoItem,ii) => {
         return (<section key={ii}>
           <h3>{videoItem.title}</h3>
-          <ReactPlayer url={videoItem.url} controls/>
+          <LazyLoad height={360} width={640}>
+            <ReactPlayer url={videoItem.url} controls/>
+          </LazyLoad>
         </section>);
       })}
     </section>
