@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactPlayer from "react-player";
 
-export const VideoPlayer = (item,i) => (
-  <section key={i}>
-    <h2>{item.title}</h2>
-    <ReactPlayer url={item.url} controls/>
-  </section>
-);
+export const VideoPlayer = (groupItem, i) => {
+  return (<div>
+    <section key={i}>
+      <h2>{groupItem.title}</h2>
+      {groupItem.videos.map((videoItem,ii) => {
+        return (<div key={ii}>
+          <h3>{videoItem.title}</h3>
+          <ReactPlayer url={videoItem.url} controls/>
+        </div>);
+      })}
+    </section>
+  </div>)
+};
