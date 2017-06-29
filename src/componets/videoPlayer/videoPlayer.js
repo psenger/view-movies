@@ -6,10 +6,10 @@ export const VideoPlayer = (groupItem, i) => {
     <section key={i}>
       <h2>{groupItem.title}</h2>
       {groupItem.videos.map((videoItem,ii) => {
-        return (<div key={ii}>
+        return (<section key={ii}>
           <h3>{videoItem.title}</h3>
           <ReactPlayer url={videoItem.url} controls/>
-        </div>);
+        </section>);
       })}
     </section>
   </div>)
