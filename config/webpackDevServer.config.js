@@ -85,7 +85,7 @@ module.exports = function(proxy, allowedHost) {
       app.use(bodyParser.json())
 
       app.post('/movies', function (req, res) {
-        console.log(req);
+        // console.log(req);
         if (!req.body || !req.body.password) {
           // res.writeHead(400, {"Content-Type": "application/json"});
           // return res.end(JSON.stringify({msg:''}));
@@ -95,9 +95,28 @@ module.exports = function(proxy, allowedHost) {
         if (req.body.password === '1111') {
           res.writeHead(200, {"Content-Type": "application/json"});
           res.end(JSON.stringify([
-            {title: 'Open Up Our Eyes (Acoustic) - Elevation Worship', url: 'https://youtu.be/cJ2VkPr1tnw'},
-            {title: 'Grace To Grace - Hillsong Worship', url: 'https://youtu.be/NS3OgXaHoyc'},
-            {title: 'Holy Holy Holy Lord God Almighty .. [Agnus Dei]', url: 'https://youtu.be/UWndDW_271g'}
+            {
+              title: 'Day One FC Class',
+              videos: [
+                { title: 'Open Up Our Eyes (Acoustic) - Elevation Worship', url: 'https://youtu.be/cJ2VkPr1tnw' },
+                { title: 'Grace To Grace - Hillsong Worship', url: 'https://youtu.be/NS3OgXaHoyc' },
+                { title: 'Holy Holy Holy Lord God Almighty .. [Agnus Dei]', url: 'https://youtu.be/UWndDW_271g' }
+              ]
+            }, {
+              title: 'Day Two FC Class',
+              videos: [
+                { title: 'Fullness (Live) - Elevation Worship', url: 'https://youtu.be/LgQ7WM-O1no' },
+                { title: 'Elevation Worship - Here As In Heaven (Acoustic)', url: 'https://youtu.be/IR-7O57IQUA' },
+                { title: 'All Things New - Hillsong Worship', url: 'https://youtu.be/tYXTSybQA9M' }
+              ]
+            }, {
+              title: 'Day Three FC Class',
+              videos: [
+                { title: 'Calvary - Hillsong Worship', url: 'https://youtu.be/qlW_ulQ_-QQ' },
+                { title: 'Our Father - Hillsong Worship', url: 'https://youtu.be/QzTxvOWpr7M' },
+                { title: 'Depths - Hillsong Worship', url: 'https://youtu.be/QyhEdIlbYTM' }
+              ]
+            }
           ]));
         } else {
           // res.writeHead(401, {"Content-Type": "application/json"});
