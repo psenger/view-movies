@@ -52,7 +52,7 @@
     "postcss-loader": "2.0.5",
     "promise": "7.1.1",
     "react": "^15.5.4",
-    "react-dev-utils": "^3.0.0",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^15.5.4",
     "react-error-overlay": "^1.0.7",
     "react-lazy-load": "^3.0.12",
